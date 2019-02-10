@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Lobster);
 
 #ctx {
-  background-image: url("./snake.jpg");
+  background-image: url("./snakeBackground.jpg");
   background-size: cover;
+  background-position: bottom right;
+  background-repeat: no-repeat;
 }
