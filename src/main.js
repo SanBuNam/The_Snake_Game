@@ -8,9 +8,10 @@ var snakeList,
   intervalVar,
   score,
   running = false;
-ctx.font = "50px Lobster";
+ctx.font = "bold 50px Lobster";
 ctx.fillStyle = "black";
 ctx.textBaseline = "top";
+ctx.fillText("The Snake Game", 230, 180);
 ctx.fillText("Click me to start the game", 140, 250);
 
 var snakeBody = {
@@ -20,8 +21,8 @@ var snakeBody = {
 };
 
 var food = {
-  width: 40,
-  height: 40,
+  width: 36,
+  height: 36,
   color: "red"
 };
 
