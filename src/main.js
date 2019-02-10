@@ -11,7 +11,9 @@ var snakeList,
 ctx.font = "bold 50px Lobster";
 ctx.fillStyle = "black";
 ctx.textBaseline = "top";
-ctx.fillText("The Snake Game", 230, 180);
+ctx.fillStyle = "Fuchsia";
+ctx.fillText("The Snake 🕹️ Game", 200, 180);
+ctx.fillStyle = "yellow";
 ctx.fillText("Click me to start the game", 140, 250);
 
 var snakeBody = {
@@ -23,7 +25,7 @@ var snakeBody = {
 var food = {
   width: 36,
   height: 36,
-  color: "red"
+  color: "Fuchsia"
 };
 
 document.getElementById("ctx").onmousedown = function() {
@@ -49,7 +51,7 @@ document.onkeydown = function(event) {
 drawSnake = function(sb, i) {
   ctx.save();
   if (i === 0) {
-    ctx.fillStyle = "red";
+    ctx.fillStyle = "Fuchsia";
   } else {
     ctx.fillStyle = snakeBody.color;
   }
